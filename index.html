@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="todo-app">
-            <h2>To-Do List <img src="todoimages.png" alt=""></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-                <button id="btn">Add</button>
-            </div>
-            <ul id="list-container">
-            </ul>
-        </div>
+  <div class="container">
+    <div class="todo-app">
+      <h2>My To-Do List 📝</h2>
+      <div class="input-row">
+        <input type="text" id="input-box" placeholder="What do you need to do?">
+        <button id="add-btn">Add</button>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <button id="clear-completed">Clear Completed</button>
     </div>
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+    
